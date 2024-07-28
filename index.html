@@ -7,10 +7,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">    <title>Recetario - Classic Omelette</title>
     <link rel="stylesheet" href="styles.css"> 
 </head>
-<body>
+<body class="light-theme">
     <main class="border m-3" style="border:#F5F2F0;">
+        <!--theme selection-->
+        <div class="button-container">
+            <button type="button" class="btn btn-outline-dark last" id="themeToggleButton">
+                <i class="bi bi-moon"></i>
+            </button>
+        </div>
         <!--Search other recipes-->
-        <section class="text-center pt-3">
+        <section class="text-center pt-5">
             <form class="d-flex m-2">
                 <input class="form-control me-2" type="search" placeholder="Search other recipes" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Search</button>
@@ -36,19 +42,19 @@
             <div class="row gx-5">
                 <div class="col">
                     <div class="p-3" style="background-color: #F5F2F0; border-radius: 13px;">
-                        <p class="text-black-75 text-start">Prep</p>
+                        <p class="text-black text-start">Prep</p>
+                        <h4 class="">5 Mins</h4>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-3" style="background-color: #F5F2F0; border-radius: 13px;">
+                        <p class="text-black text-start">Cook</p>
                         <h4>5 Mins</h4>
                     </div>
                 </div>
                 <div class="col">
                     <div class="p-3" style="background-color: #F5F2F0; border-radius: 13px;">
-                        <p class="text-black-75 text-start">Cook</p>
-                        <h4>5 Mins</h4>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="p-3" style="background-color: #F5F2F0; border-radius: 13px;">
-                        <p class="text-black-75 text-start">Total</p>
+                        <p class="text-black text-start">Total</p>
                         <h4>10 Mins</h4>
                     </div>
                 </div>
@@ -100,6 +106,7 @@
             <p><br>Recipe by: Rolando Andrade<a href="https://github.com/rolandoandrad3"></a></p>
         </footer>
     </section>
-    </main>    
+    </main>   
+    <script src="theme-toggle.js"></script> 
 </body>
 </html>
