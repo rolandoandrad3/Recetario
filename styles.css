@@ -4,3 +4,6 @@
     object-fit: cover; /* Mantiene la proporción de la imagen */
     border-radius: 15px;
 }
+.custom-spacing {
+    gap: 3px; /* Espacio entre columnas */
+}
